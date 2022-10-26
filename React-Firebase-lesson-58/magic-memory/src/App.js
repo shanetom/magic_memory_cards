@@ -48,8 +48,7 @@ function App() {
         })
         resetTurn()
       } else {
-        console.log("no match")
-        resetTurn()
+        setTimeout(() => resetTurn(), 1000)
       }
     }
   }, [choiceOne, choiceTwo])
